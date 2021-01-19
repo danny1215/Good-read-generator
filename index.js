@@ -6,9 +6,9 @@ const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile)
 
-function promptUser(){
+const promptUser = () =>
 
-  return inquirer.prompt([
+   inquirer.prompt([
     {
       type: 'input',
       message: 'What is the name of your Project?',
@@ -18,7 +18,7 @@ function promptUser(){
     {
       type: 'input',
       message: 'What is your description of your application?',
-      name: 'Discription',
+      name: 'discription',
       
     },
     {
@@ -30,13 +30,13 @@ function promptUser(){
     {
       type: 'input',
       message: 'what is the use of your application?',
-      name: 'use',
+      name: 'Use',
       
     },
     {
       type: 'input',
       message: 'who are the contributors to your application?',
-      name: 'contribute',
+      name: 'contribution',
       
     },
     {
@@ -63,54 +63,58 @@ function promptUser(){
     },
   ])
 
-}
-  
 
-  const generateMarkdown = (data) => {
-    return `
-    # ${data.title}
+  
+const generateMarkdown = (data) => {
+return `
+# ${data.title}
     
   
   
-    ## Table of contents
-    * [Description](#discription)
-    * [Installation](#installation)
-    * [Usage Information](#use)
-    * [Contribution](#contribute)
-    * [Test](#test)
-    * [License](#license)
+## Table of contents
+* [Discription](#discription)
+* [Installation](#installation)
+* [Usage](#use)
+* [Contribution](#contribution)
+* [Test](#test)
+* [License](#license)
     
-    ###  Description:
-    ${data.Discription}
+###  Description:
+- ${data.discription}
   
-    ### Installation:
-    ${data.installation}
+### Installation:
+- ${data.installation}
   
-    ### Usage Information:
-    ${data.use}
+### Usage Information:
+- ${data.Use}
   
-    ### Contribution:
-    ${data.contribute}
+### Contribution:
+- ${data.contribution}
     
-    ### Test:
-    ${data.test}
+### Test:
+- ${data.test}
   
-    ### License:
-    ${data.license}
+### License:
+- ${data.license}
   
-    Github:[${data.Github}](https://github.com/danny1215)
+Github:[${data.Github}](https://github.com/danny1215)
   
-    Email:[${data.email}](dannymamusha@gmail.com)
-  `
-  ;}
+Email:[${data.email}](dannymamusha@gmail.com)
+`
+;}
 
   promptUser()
-  .then((data) => writeFileAsync('freadme.md', generateMarkdown(data)))
+  .then((data) => writeFileAsync("freadme.md", generateMarkdown(data)))
   .then(() => console.log('Successfully wrote to readme.md'))
   .catch((err) => console.error(err));
 
 
-  
+  // promptUser()
+//   .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
+//   .then(() => console.log('Successfully wrote to index.html'))
+//   .catch((err) => console.error(err));
+
+
 //   .then((data) => {
    
 //     fs.writeFile('freadme.md', generateMarkdown(data,(err) => {
