@@ -1,34 +1,37 @@
 
-# d
-    
+  # read me generator
+ 
+
+  ## Table of contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage-Information](#use)
+  * [Contribution](#contribution)
+  * [Test](#test)
+  * [License](#license)
+  ## Contact Information
+  * [Github](#github)
+  * [Email](#email)
   
+  ## Description
+  hello
+
+  ## Installation
+  node index.js
+
+  ## Usage Information
+  to generate a readme.md file
+
+  ## Contribution
+  me
   
-## Table of contents
-* [Discription](#discription)
-* [Installation](#installation)
-* [Usage](#use)
-* [Contribution](#contribution)
-* [Test](#test)
-* [License](#license)
-    
-###  Description:
-- s
-  
-### Installation:
-- d
-  
-### Usage Information:
-- s
-  
-### Contribution:
-- d
-    
-### Test:
-- s
-  
-### License:
-- email
-  
-Github:[undefined](https://github.com/danny1215)
-  
-Email:[d](dannymamusha@gmail.com)
+  ## Test
+  none
+
+  ## License
+  telekinesis
+
+  Github:danny1215
+
+  ##Email Me AT
+  dannymamusha@gmail.com

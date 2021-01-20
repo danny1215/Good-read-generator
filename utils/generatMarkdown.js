@@ -8,20 +8,20 @@
 //   }
 // }
 
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
+// // // TODO: Create a function that returns the license link
+// // // If there is no license, return an empty string
 // function renderLicenseLink(license) {
-//   if (data.licence == link) {
-//     return true;
+//   if (data.licenceLink == link) {
+//     return link;
 //   } else {
 //     return("");
 //   }
 // }
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
+// // // TODO: Create a function that returns the license section of README
+// // // If there is no license, return an empty string
 // function renderLicenseSection(license) {
-//   if (licence) {
+//   if (licenceSection) {
 //     return true;
 //   } else {
 //     return("");
@@ -29,42 +29,45 @@
 // }
 
 // TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `
-//   # ${data.title}
+function generateMarkdown(data) {
+  return `
+  # ${data.title}
+ 
+
+  ## Table of contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage-Information](#use)
+  * [Contribution](#contribution)
+  * [Test](#test)
+  * [License](#license)
+  ## Contact Information
+  * [Github](#github)
+  * [Email](#email)
   
+  ## Description
+  ${data.description}
 
+  ## Installation
+  ${data.installation}
 
-//   ## Table of contents
-//   * [Description](#discription)
-//   * [Installation](#installation-information)
-//   * [Usage Information](#usage-information)
-//   * [Contribution](#contribution-guidlines)
-//   * [Test](#test-instructions)
-//   * [License](#license)
+  ## Usage Information
+  ${data.use}
+
+  ## Contribution
+  ${data.contribution}
   
-//   ## Description
-//   ${data.Discription}
+  ## Test
+  ${data.test}
 
-//   ## Installation
-//   ${data.installation}
+  ## License
+  ${data.license}
 
-//   ## Usage Information
-//   ${data.use}
+  Github:${data.github}
 
-//   ## Contribution
-//   ${data.contribution}
-  
-//   ## Test
-//   ${data.test}
+  ##Email Me AT
+  ${data.email}
+`
+;}
 
-//   ## License
-//   ${data.license}
-
-//   Github:[${data.Github}](https://github.com/danny1215)
-
-//   Email:[${data.email}](dannymamusha@gmail.com)
-// `
-// ;}
-
-// module.exports = generateMarkdown;
+module.exports = generateMarkdown;
