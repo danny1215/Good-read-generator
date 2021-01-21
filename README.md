@@ -24,4 +24,7 @@ This Application can be used by clonning it, open in command prompt or bash.  Th
 
 ## SCREENSHOTS
 
+![readmefile screenshoot](https://user-images.githubusercontent.com/59859358/105422791-58910d80-5c12-11eb-9b2c-1469d2d7a8fe.PNG)
+
+![readme screenshot 2](https://user-images.githubusercontent.com/59859358/105422798-5b8bfe00-5c12-11eb-873b-2c70432fde54.PNG)
 

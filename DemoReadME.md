@@ -1,17 +1,15 @@
 
-  # Read me generator
+  # Readme File
   ## License
 
-  ![Discord](https://img.shields.io/discord/102860784329052160?style=plastic)
+  ![AUR license](https://img.shields.io/aur/license/android-studio?style=plastic)
   
-      https://opensource.org/licenses/ISC
-
-  ISC
+  
 
   ## Table of contents
   * [Description](#description)
   * [Installation](#installation)
-  * [Usage-Information](#use)
+  * [Usage-Information](#usage-information)
   * [Contribution](#contribution)
   * [Test](#test)
   * [License](#license)
@@ -21,24 +19,35 @@
   * [Email](#email)
   
   ## Description
-  use node js to generate a readme file
+  This application use node.js, fs, and inquirer by prompting a user with a series of questions and generate a markdown which intern generate a readme.md file
 
   ## Installation
-  clone it from my repository
+  Install fs, and inqiurer then run the application in command prompt or bash.
 
   ## Usage Information
-  inorder to generate a readme.md file
+  The use of this application is to quickly gererate a readme file for a developer.
 
   ## Contribution
-  none
+  None
   
   ## Test
-  run in cmd prmt and type node index.js
+  Run it on command prompt or git bash type node index.js.
 
+  ## License link
   
-FOR ANY INFORMATION FEEL FREE TO CONTACT ME AT
+      https://opensource.org/licenses/Apache-2.0
 
-  Github:(https://github.com/danny1215)
+  ## License Type
 
-  Email Me AT
+      APACHE 
+  
+
+  ## Github 
+  
+      https://github.com/danny1215
+
+For any questions feel free to contact me below email
+
+  ## Email
+
   dannymamusha@gmail.com

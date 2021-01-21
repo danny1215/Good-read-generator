@@ -66,14 +66,12 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
   
-  ${renderLicenseLink(data.license)}
-
-  ${renderLicenseSection(data.license)}
+  
 
   ## Table of contents
   * [Description](#description)
   * [Installation](#installation)
-  * [Usage-Information](#use)
+  * [Usage-Information](#usage-information)
   * [Contribution](#contribution)
   * [Test](#test)
   * [License](#license)
@@ -97,12 +95,23 @@ function generateMarkdown(data) {
   ## Test
   ${data.test}
 
+  ## License link
   
-FOR ANY INFORMATION FEEL FREE TO CONTACT ME AT
+      ${renderLicenseLink(data.license)}
 
-  Github:(https://github.com/${data.github})
+  ## License Type
 
-  Email Me AT
+      ${renderLicenseSection(data.license)} 
+  
+
+  ## Github 
+  
+      https://github.com/${data.github}
+
+For any questions feel free to contact me below email
+
+  ## Email
+
   ${data.email}
 `
 ;}
