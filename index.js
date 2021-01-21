@@ -1,13 +1,13 @@
 // TODO: Include packages needed for this application
 
-// inquirer module const
+// inquirer module const variable
 const inquirer = require("inquirer");
 // fs module const
 const fs = require('fs');
-// genearteMarkdown const to generate the formate of the readme file
-const generatMarkdown = require('./utils/generatMarkdown');
+// genearteMarkdown const variable to generate the formate of the readme file
+const generatMarkdown = require('./utils/generateMarkdown');
 
-// const util = require("util");
+
 
 // TODO: Create an array of questions for user input
 
@@ -16,44 +16,44 @@ const generatMarkdown = require('./utils/generatMarkdown');
 
     {
       type: 'input',
-      message: 'What is the name of your Project?',
+      message: 'What is the title of your Project?',
       name: 'title',
      
     },
     {
       type: 'input',
-      message: 'What is your description of your application?',
+      message: 'What is your description of your project?',
       name: 'description',
       
     },
     {
       type: 'input',
-      message: 'what is the installation instruction of your application?',
+      message: 'what is the installation instruction of your project?',
       name: 'installation',
       
     },
     {
       type: 'input',
-      message: 'what is the use of your application?',
+      message: 'what is the use of your project?',
       name: 'use',
       
     },
     {
       type: 'input',
-      message: 'who are the contributors to your application?',
+      message: 'what is the contibution guildlines for the project?',
       name: 'contribution',
       
     },
     {
       type: 'input',
-      message: 'what are the test instructions of your application?',
+      message: 'what are the test instructions of your project?',
       name: 'test',
       
     },
     {
       type: 'list',
-      message: ' what is the licence of the application?',
-      choices: ['email', 'phone', 'telekinesis'],
+      message: ' what is the licence of the project?',
+      choices: ['MIT', 'ISC', 'APACHE', 'GNU GPLV3', 'NONE'],
       name: 'license',
     },
     {
@@ -92,12 +92,12 @@ function writeToFile(fileName, data) {
 function init(){
   inquirer.prompt(userQuestions)
   .then(function(data){
-      writeToFile("FreadME.md", generatMarkdown(data));
+      writeToFile("DemoReadME.md", generatMarkdown(data));
       
   })
 }
 
-// Function call to initialize app
+// Envoking a Function to initialize app
 
 init();
 
