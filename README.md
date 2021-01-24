@@ -18,6 +18,7 @@ This Application can be used by clonning it, open in command prompt or bash.  Th
 - fs module
 - inquirer
 - Markedown generator
+- Node.js
 
 ## LINK TO THE REPOSITORY
 -The link is [Good-read-generator](https://github.com/danny1215/danielHomeWork5)
