@@ -21,7 +21,7 @@ This Application can be used by clonning it, open in command prompt or bash.  Th
 - Node.js
 
 ## LINK TO THE REPOSITORY
--The link is [Good-read-generator](https://github.com/danny1215/danielHomeWork5)
+-The link is [Good-read-generator](https://github.com/danny1215/Good-read-generator)
 
 ## SCREENSHOTS
 
